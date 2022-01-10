@@ -1,7 +1,7 @@
 
 const gulp = require('gulp');
 const gulpSass = require('gulp-sass');
-const sass = require('sass');
+const sass = gulpSass(require('sass'));
 
 
 gulp.task('log' , function(){
