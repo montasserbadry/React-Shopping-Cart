@@ -1,8 +1,12 @@
 import React from 'react';
 import '../../css/Header/Header.css';
+import { word } from './../../static';
+
 function Header() {
     return(
-        <header> Shopping Card</header>  
+        <header> 
+        {word.headerTitle}
+        </header>  
     )
 }
 export default Header;

@@ -1,10 +1,11 @@
 import React from 'react';
 import '../../css/Footer/Footer.css';
+import { word } from './../../static';
 
 function Footer() {
     return(
         <footer> 
-        &copy;Copywright Montasser Badry 2021
+        {word.footerTitle}
         </footer>  
     )
 }
