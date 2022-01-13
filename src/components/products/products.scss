@@ -1,65 +1,62 @@
-
 .pro-wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    .pro-item{
+  .pro-item {
     width: 23%;
 
-
-    img{
-    max-width: 100%;
-    width: 220px;
-    height: 200px;
-    padding: 2px;
-    border: 1px solid #c0c0c0;
+    img {
+      max-width: 100%;
+      width: 180px;
+      height: 200px;
+      padding: 2px;
+      border: 1px solid #c0c0c0;
     }
-    .pro-desc{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    p {
-     font-size: 17px;
-     }
-     span{
-         font-weight: bold;
-       padding: 0 14px;
-       }
+    .pro-desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+      p {
+        font-size: 17px;
+      }
+      span {
+        font-weight: bold;
+        padding: 0 14px;
+      }
+    }
+    button {
+      width: 100%;
+      border: 0;
+      background-color: blueviolet;
+      color: white;
+      border-radius: 6px;
+      padding: 7px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 }
-    button{
-    width: 100%;
-    border: 0;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 6px;
-    padding: 7px;
-    font-size: 14px;
+.product-info {
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+    height: 250px;
+  }
+  p {
+    color: blueviolet;
+    font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
-    }
-    }
-   
-    }
-    .product-info{
-        img{
-            display: block;
-            margin: 20px auto;
-            width: 40%;
-            height: 300px;
-        }
-        p {
-            color: blueviolet;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 10px 0;
-            text-align: center;
-        }
-    }
-    .close-icon{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -6,7 +6,7 @@
         "imgurl" : "images/product11.jpg",
         "desc" : "this is prodict 1" ,
         "price" : 180 ,
-        "size" : ["S" ,"L"]
+        "size" : ["S" ,"L","XS"]
 
 },
 {
@@ -15,7 +15,7 @@
     "imgurl" : "images/product12.jpg",
     "desc" : "this is prodict 2" ,
     "price" : 375 ,
-    "size" : ["S" ,"L"]
+    "size" : ["S" ,"L","M"]
 
 },
 
@@ -25,7 +25,7 @@
     "imgurl" : "images/product14.jpg",
     "desc" : "this is prodict 3" ,
     "price" : 215 ,
-    "size" : ["S" ,"L"]
+    "size" : ["S" ,"L","XL"]
 
 },
 
@@ -35,7 +35,7 @@
     "imgurl" : "images/product16.jpg",
     "desc" : "this is prodict 4" ,
     "price" : 350 ,
-    "size" : ["S" ,"L"]
+    "size" : ["S" ,"XXL","M"]
 
 }
 ]

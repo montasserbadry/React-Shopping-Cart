@@ -7,7 +7,7 @@
 }
 .pro-wrapper .pro-item img {
   max-width: 100%;
-  width: 220px;
+  width: 180px;
   height: 200px;
   padding: 2px;
   border: 1px solid #c0c0c0;
@@ -41,7 +41,7 @@
   display: block;
   margin: 20px auto;
   width: 40%;
-  height: 300px;
+  height: 250px;
 }
 .product-info p {
   color: blueviolet;
