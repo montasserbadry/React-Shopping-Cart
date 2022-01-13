@@ -42,3 +42,26 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.product-info img {
+  display: block;
+  margin: 20px auto;
+  width: 40%;
+  height: 300px;
+}
+
+.product-info p {
+  color: blueviolet;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
