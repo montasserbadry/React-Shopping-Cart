@@ -23,7 +23,7 @@
     "id" : "id4",
     "title" :"product 3",
     "imgurl" : "images/product14.jpg",
-    "desc" : "this is prodict 4" ,
+    "desc" : "this is prodict 3" ,
     "price" : 215 ,
     "size" : ["S" ,"L"]
 
@@ -33,7 +33,7 @@
     "id" : "id6",
     "title" :"product 4",
     "imgurl" : "images/product16.jpg",
-    "desc" : "this is prodict 6" ,
+    "desc" : "this is prodict 4" ,
     "price" : 350 ,
     "size" : ["S" ,"L"]
 
