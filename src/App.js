@@ -1,4 +1,4 @@
-import React, { useState ,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Cart from "./components/Cart/Cart";
 import Filter from "./components/Filter/Filter";
 import Footer from "./components/Footer/Footer";
@@ -10,7 +10,7 @@ function App() {
   const [products, setProducts] = useState(data)
   const [sort, setSort] = useState("")
   const [size, setSize] = useState("")
-  const [cartItems, setcartItems] = useState(JSON.parse(localStorage.getItem('cartItems'))|| [])
+  const [cartItems, setcartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || [])
 
   const handleFilterBySize = (e) => {
     setSize(e.target.value)
@@ -41,30 +41,30 @@ function App() {
     )
     setProducts(newProducts);
   }
-  const addToCart=(product)=>{
-    const cartItemesClone=[...cartItems];
+  const addToCart = (product) => {
+    const cartItemesClone = [...cartItems];
     var isProductExist = false;
-    cartItemesClone.forEach(p =>{
-if (p.id === product.id){
-  p.qty ++;
-  isProductExist= true;
-}
+    cartItemesClone.forEach(p => {
+      if (p.id === product.id) {
+        p.qty++;
+        isProductExist = true;
+      }
     })
-    if(!isProductExist){
-      cartItemesClone.push({...product ,qty:1})
+    if (!isProductExist) {
+      cartItemesClone.push({ ...product, qty: 1 })
     }
     setcartItems(cartItemesClone)
   }
   useEffect(() => {
-    localStorage.setItem('cartItems',JSON.stringify(cartItems))
+    localStorage.setItem('cartItems', JSON.stringify(cartItems))
   }
-  ,[cartItems]
-)
+    , [cartItems]
+  )
 
-const   toRemoveCart = (product) => {
-  const cartItemesClone = [...cartItems]
-  setcartItems(cartItemesClone.filter(p => p.id !== product.id))
-}
+  const toRemoveCart = (product) => {
+    const cartItemesClone = [...cartItems]
+    setcartItems(cartItemesClone.filter(p => p.id !== product.id))
+  }
 
 
   return (
@@ -74,13 +74,13 @@ const   toRemoveCart = (product) => {
         <div className="wrapper">
           <Products products={products} addToCart={addToCart} />
           <Filter
-          productsNumber ={products.length}
+            productsNumber={products.length}
             size={size}
             sort={sort}
             handleFilterBySize={handleFilterBySize}
             handleFilterByOrder={handleFilterByOrder} />
         </div>
-        <Cart  cartItems={cartItems} addToCart={addToCart} toRemoveCart={toRemoveCart}/>
+        <Cart cartItems={cartItems} addToCart={addToCart} toRemoveCart={toRemoveCart} />
       </main>
       <Footer />
     </div>
