@@ -5,6 +5,8 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Products from "./components/products/products";
 import data from "./data.json";
+import {Provider} from 'react-redux';
+import store from './store/store';
 
 function App() {
   const [products, setProducts] = useState(data)
@@ -68,6 +70,7 @@ function App() {
 
 
   return (
+    <Provider store={store}>
     <div className="layout">
       <Header />
       <main>
@@ -84,6 +87,8 @@ function App() {
       </main>
       <Footer />
     </div>
+    
+    </Provider>
   );
 }
 
